@@ -7,10 +7,24 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter your name: ");
-        String name = scanner.nextLine();
+        String item;
+        double price;
+        int quantity;
+        char currency = '$';
+        double total;
 
-        System.out.println(name);
+        System.out.print("What item would you like to purchase? : ");
+        item = scanner.nextLine();
+
+        System.out.print("What is the prix for each? : ");
+        price = scanner.nextDouble();
+
+        System.out.print("How many would you like? : ");
+        quantity = scanner.nextInt();
+
+        total = price * quantity;
+
+        System.out.println(total);
 
         scanner.close();
     }
