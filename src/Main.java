@@ -24,7 +24,8 @@ public class Main {
 
         total = price * quantity;
 
-        System.out.println(total);
+        System.out.println("\nYou have bought " + quantity + " " + item + "(s)");
+        System.out.println("You own us " + currency + total);
 
         scanner.close();
     }
