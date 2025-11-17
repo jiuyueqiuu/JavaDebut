@@ -35,6 +35,13 @@ import java.util.Random;
  default -> System.out.println(day + " not exist lil bro");
  }
 
+
+ The logical operators :
+
+ && = AND
+ || = OR
+ ! = NOT
+
  */
 
 public class Main {
@@ -43,19 +50,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        String day;
-        System.out.print("Enter a day in the week : ");
-        day = scanner.nextLine();
+        double temp = 2;
+        boolean isSunny = true;
 
-        switch (day) {
-            case "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ->
-                    System.out.println("It is a weekday :( ");
-            case "Saturday", "Sunday" ->
-                    System.out.println("It is a weekend :) ");
-            default -> System.out.println(day + " not exist lil bro");
+        if (temp <= 30 && temp >= 0 && isSunny) {
+            System.out.println("The weather is GOOD ;)");
+            System.out.println("The weather is SUNNY, go outside please;");
         }
-
-
 
         scanner.close();
     }
