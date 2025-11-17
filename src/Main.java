@@ -8,18 +8,25 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        String email;
-        String username;
-        String domain;
+        double weight;
+        double converted_weight;
+        String unit;
+        System.out.print("Enter weight : ");
+        weight = scanner.nextDouble();
+        scanner.nextLine();
 
-        System.out.print("Enter your email: ");
+        System.out.print("Which unit are you starting with? (kgs/lbs) ");
+        unit = scanner.nextLine();
 
-        email = scanner.nextLine();
-        username = email.substring(0, email.indexOf("@"));
-        domain = email.substring(email.indexOf("@") + 1);
+        if(unit.equals("kgs")) {
+            converted_weight = weight * 2.20462;
+        } else {
+            converted_weight = weight / 2.20462;
+        }
 
-        System.out.println(username);
-        System.out.println(domain);
+        System.out.print("\nThe converted weight is : " + converted_weight);
+
+        scanner.close();
 
 
 
