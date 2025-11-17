@@ -6,21 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String name = "Password";
+        Scanner scanner = new Scanner(System.in);
 
-//        int length = name.length();
-//        char letter = name.charAt(0);
-//
-//        int index = name.indexOf(" ");
-//        int lastIndex = name.lastIndexOf(" ");
-//
-//        System.out.println(letter);
-//        System.out.println(index);
-//        System.out.println(lastIndex);
+        String email;
+        String username;
+        String domain;
 
-        if(name.equalsIgnoreCase("password")){
-            System.out.println("Your name cant be the password broski");
-        }
+        System.out.print("Enter your email: ");
+
+        email = scanner.nextLine();
+        username = email.substring(0, email.indexOf("@"));
+        domain = email.substring(email.indexOf("@") + 1);
+
+        System.out.println(username);
+        System.out.println(domain);
+
+
 
     }
 }
