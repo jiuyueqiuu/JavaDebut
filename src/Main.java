@@ -48,18 +48,32 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        int age = 0;
-
-
+        int guess;
+        int attempts = 0;
+        int randomNum = rand.nextInt(0, 11);
 
         do {
-            System.out.print("Enter your age: ");
-            age = scanner.nextInt();
-        } while (age < 0 || age > 100);
+            System.out.println("Guess a number between 1 and 10 : ");
+            guess = scanner.nextInt();
+            attempts++;
 
-        System.out.print("You are " + age + " years old!");
+            if (guess > randomNum) {
+                System.out.println("TOO HIGH");
+            }
+            else if (guess < randomNum) {
+                System.out.println("TOO LOW");
+            }
+            else {
+                System.out.println("YOU ARE GOOD ! Correct ! The number was " + randomNum);
+                System.out.println("# of attempts : " + attempts);
+            }
+        } while (guess != randomNum);
+
+        System.out.println("You have won");
+
 
         scanner.close();
     }
