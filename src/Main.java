@@ -5,17 +5,22 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        Random random = new Random();
 
-        boolean coin;
+        String name = "Password";
 
-        coin = random.nextBoolean();
+//        int length = name.length();
+//        char letter = name.charAt(0);
+//
+//        int index = name.indexOf(" ");
+//        int lastIndex = name.lastIndexOf(" ");
+//
+//        System.out.println(letter);
+//        System.out.println(index);
+//        System.out.println(lastIndex);
 
-        if(coin) {
-            System.out.println("HEADS !");
+        if(name.equalsIgnoreCase("password")){
+            System.out.println("Your name cant be the password broski");
         }
-        else  {
-            System.out.println("TAILS !");
-        }
+
     }
 }
