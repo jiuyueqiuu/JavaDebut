@@ -50,13 +50,16 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double temp = 2;
-        boolean isSunny = true;
+        int age = 0;
 
-        if (temp <= 30 && temp >= 0 && isSunny) {
-            System.out.println("The weather is GOOD ;)");
-            System.out.println("The weather is SUNNY, go outside please;");
-        }
+
+
+        do {
+            System.out.print("Enter your age: ");
+            age = scanner.nextInt();
+        } while (age < 0 || age > 100);
+
+        System.out.print("You are " + age + " years old!");
 
         scanner.close();
     }
