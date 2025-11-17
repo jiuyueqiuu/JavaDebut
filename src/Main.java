@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import java.util.Random;
 
+// ternary operator :
+// variable = (condition) ? ifTrue : if False;
+// Exemple : String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
 
 public class Main {
 
@@ -8,25 +11,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        double weight;
-        double converted_weight;
-        String unit;
-        System.out.print("Enter weight : ");
-        weight = scanner.nextDouble();
-        scanner.nextLine();
+        int number;
+        System.out.print("Enter a number: ");
+        number = scanner.nextInt();
 
-        System.out.print("Which unit are you starting with? (kgs/lbs) ");
-        unit = scanner.nextLine();
+        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
 
-        if(unit.equals("kgs")) {
-            converted_weight = weight * 2.20462;
-        } else {
-            converted_weight = weight / 2.20462;
-        }
-
-        System.out.print("\nThe converted weight is : " + converted_weight);
-
-        scanner.close();
+        System.out.println(evenOrOdd);
 
 
 
