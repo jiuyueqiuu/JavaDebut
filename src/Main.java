@@ -11,15 +11,21 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int number;
-        System.out.print("Enter a number: ");
-        number = scanner.nextInt();
+        double temp;
+        double newTemp;
+        String unit;
 
-        String evenOrOdd = (number % 2 == 0) ? "Even" : "Odd";
+        System.out.print("Enter the temperature : ");
+        temp = scanner.nextDouble();
 
-        System.out.println(evenOrOdd);
+        System.out.print("Convert to Celsius or Fahrenheit ? (C or F) : ");
+        unit = scanner.next().toUpperCase();
+
+        newTemp = (unit.equals("C")) ? (temp - 32) * 5 / 9 : (temp * 5 / 9) + 32;
 
 
+        System.out.println(newTemp + " " + unit);
 
+        scanner.close();
     }
 }
