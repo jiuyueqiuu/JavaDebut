@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -51,19 +52,28 @@ import java.util.Random;
  */
 
 public class Main {
-    static int x = 3;
+    public static void main(String[] args) {
 
-    public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
 
-        int x = 1;
-        System.out.println(x);
-        doSomething();
+        int numFoods;
+        System.out.print("Enter number of foods: ");
+        numFoods = scanner.nextInt();
+        scanner.nextLine();
 
-    }
+        String[] foods = new String[numFoods];
+        for(int i = 0; i < foods.length; i++){
+            System.out.print("Enter food : ");
+            foods[i] = scanner.nextLine();
+        }
 
-    static void doSomething () {
-        int x = 2;
-        System.out.println(x);
+        for (String food : foods) {
+            System.out.println(food);
+        }
+
+        scanner.close();
+
+
     }
 
 }
