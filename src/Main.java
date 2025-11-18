@@ -42,23 +42,28 @@ import java.util.Random;
  || = OR
  ! = NOT
 
+
+ Important note :
+ In Java, overloaded methods can exist !
+ That means, methods can share the same name but possess different parameters
+
+ A class variable is declared inside a class, not in methods
  */
 
 public class Main {
+    static int x = 3;
 
     public static void main(String[] args) throws InterruptedException {
 
-        Random rand = new Random();
-        Scanner scanner = new Scanner(System.in);
+        int x = 1;
+        System.out.println(x);
+        doSomething();
 
-        scanner.close();
-
-
-        System.out.print(square(5));
     }
 
-    static double square (double num) {
-        return num * num;
+    static void doSomething () {
+        int x = 2;
+        System.out.println(x);
     }
 
 }
