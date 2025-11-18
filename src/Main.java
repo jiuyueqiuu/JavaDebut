@@ -46,33 +46,18 @@ import java.util.Random;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        int guess;
-        int attempts = 0;
-        int randomNum = rand.nextInt(0, 11);
+        System.out.print("How many seconds to wait ? ");
+        int sec = scanner.nextInt();
 
-        do {
-            System.out.println("Guess a number between 1 and 10 : ");
-            guess = scanner.nextInt();
-            attempts++;
-
-            if (guess > randomNum) {
-                System.out.println("TOO HIGH");
-            }
-            else if (guess < randomNum) {
-                System.out.println("TOO LOW");
-            }
-            else {
-                System.out.println("YOU ARE GOOD ! Correct ! The number was " + randomNum);
-                System.out.println("# of attempts : " + attempts);
-            }
-        } while (guess != randomNum);
-
-        System.out.println("You have won");
+        for (int i = sec; i > 0; i--) {
+            System.out.println(i);
+            Thread.sleep(1000);
+        }
 
 
         scanner.close();
