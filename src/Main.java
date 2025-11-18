@@ -51,15 +51,14 @@ public class Main {
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("How many seconds to wait ? ");
-        int sec = scanner.nextInt();
-
-        for (int i = sec; i > 0; i--) {
-            System.out.println(i);
-            Thread.sleep(1000);
-        }
-
-
         scanner.close();
+
+
+        System.out.print(square(5));
     }
+
+    static double square (double num) {
+        return num * num;
+    }
+
 }
