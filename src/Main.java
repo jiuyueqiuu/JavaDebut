@@ -49,31 +49,44 @@ import java.util.Random;
  That means, methods can share the same name but possess different parameters
 
  A class variable is declared inside a class, not in methods
+
+ varargs = allow a method to accept a varying num of args.
+ makes methods more flexible, Java pack the args into an array
+ ... (ellipsis)
+
  */
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("How many nums do you want ? ");
+        int n = scanner.nextInt();
 
-        int numFoods;
-        System.out.print("Enter number of foods: ");
-        numFoods = scanner.nextInt();
-        scanner.nextLine();
-
-        String[] foods = new String[numFoods];
-        for(int i = 0; i < foods.length; i++){
-            System.out.print("Enter food : ");
-            foods[i] = scanner.nextLine();
+        double[] numbers = new double[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter number " + (i + 1) + ": ");
+            numbers[i] = scanner.nextDouble();
         }
 
-        for (String food : foods) {
-            System.out.println(food);
-        }
+        double avg = average(numbers);
+
+        System.out.println("The average is " + avg);
+
+
 
         scanner.close();
 
 
     }
 
+    static double average (double... nums) {
+        double sum = 0;
+
+        for (double num : nums) {
+            sum += num;
+        }
+        return sum / nums.length;
+
+    }
 }
