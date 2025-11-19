@@ -60,33 +60,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("How many nums do you want ? ");
-        int n = scanner.nextInt();
+        Random rand = new Random();
 
-        double[] numbers = new double[n];
-        for (int i = 0; i < n; i++) {
-            System.out.println("Enter number " + (i + 1) + ": ");
-            numbers[i] = scanner.nextDouble();
-        }
+        Car car1 = new Car();
+        Car car2 = new Car();
 
-        double avg = average(numbers);
-
-        System.out.println("The average is " + avg);
 
 
 
         scanner.close();
 
-
     }
 
-    static double average (double... nums) {
-        double sum = 0;
-
-        for (double num : nums) {
-            sum += num;
-        }
-        return sum / nums.length;
-
-    }
 }
