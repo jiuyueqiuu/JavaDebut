@@ -62,9 +62,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Car car1 = new Car();
-        Car car2 = new Car();
-
+        Student student1 = new Student("Spongebob", 30, 6.6, true);
+        Student student2 = new Student("Patrick", 30, 3.5, false);
 
 
 
