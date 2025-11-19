@@ -62,10 +62,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Student student1 = new Student("Spongebob", 30, 6.6, true);
-        Student student2 = new Student("Patrick", 30, 3.5, false);
+        User user1 = new User("Heinrich");
+        User user2 = new User("Daniel", "daniel@aol.com");
 
+        System.out.println(user1.username);
+        System.out.println(user1.email);
+        System.out.println(user1.age);
 
+        System.out.println(user2.username);
+        System.out.println(user2.email);
+        System.out.println(user2.age);
 
         scanner.close();
 

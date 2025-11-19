@@ -10,7 +10,7 @@ public class Student {
         this.age = age;
         this.gpa = gpa;
         this.isEnrolled = isEnrolled;
-    }
+    }  // Right here is a constructor
 
     void study () {
         System.out.println(this.name + "is studying");
