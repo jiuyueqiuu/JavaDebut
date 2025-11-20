@@ -54,6 +54,12 @@ import java.util.Random;
  makes methods more flexible, Java pack the args into an array
  ... (ellipsis)
 
+ Inheritance = One class inherits the attributes
+ and methods from another class.
+
+ Child <--- Parent <--- Grandparent
+ See Cat, Dog <--- Animal <--- Organism
+
  */
 
 public class Main {
@@ -62,11 +68,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Friend friend1 = new Friend("Squidward");
-        Friend friend2 = new Friend("Patrick");
-        Friend friend3 = new Friend("David");
+        Dog dog = new Dog();
+        Cat cat = new Cat();
 
-        Friend.showFriends();
+        System.out.println(dog.isAlive);
+        System.out.println(cat.isAlive);
 
         scanner.close();
 
