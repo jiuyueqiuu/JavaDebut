@@ -1,6 +1,3 @@
-import oldClasses.Student;
-
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -74,6 +71,11 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
+
+        Person person1 = new Person("Tom", "Hanks");
+        Student student1 = new Student("Harry", "Potter", 3.25);
+
+        person1.showName();
 
 
         scanner.close();
