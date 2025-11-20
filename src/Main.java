@@ -60,6 +60,11 @@ import java.util.Random;
  Child <--- Parent <--- Grandparent
  See Cat, Dog <--- Animal <--- Organism
 
+
+ super = Refers to the parent class (subclass <- superclass)
+ Used in constructors and method overriding
+ Calls the parent constructor to initialise attributes
+
  */
 
 public class Main {
@@ -68,11 +73,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-
-        System.out.println(dog.isAlive);
-        System.out.println(cat.isAlive);
 
         scanner.close();
 
