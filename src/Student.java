@@ -13,7 +13,7 @@ public class Student {
     }  // Right here is a constructor
 
     void study () {
-        System.out.println(this.name + "is studying");
+        System.out.println(this.name + " is studying");
     }
 }
 
