@@ -1,3 +1,5 @@
+package oldClasses;
+
 public class Organism {
 
     boolean isAlive;

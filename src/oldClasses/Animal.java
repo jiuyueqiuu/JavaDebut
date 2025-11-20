@@ -1,7 +1,9 @@
+package oldClasses;
+
 public class Animal extends Organism {
 
     void eat () {
-        System.out.println("Animal is eating");
+        System.out.println("oldClasses.Animal is eating");
     }
 
 }

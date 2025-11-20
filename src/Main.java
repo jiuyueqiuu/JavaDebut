@@ -1,3 +1,5 @@
+import oldClasses.Student;
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
@@ -58,7 +60,7 @@ import java.util.Random;
  and methods from another class.
 
  Child <--- Parent <--- Grandparent
- See Cat, Dog <--- Animal <--- Organism
+ See oldClasses.Cat, oldClasses.Dog <--- oldClasses.Animal <--- oldClasses.Organism
 
 
  super = Refers to the parent class (subclass <- superclass)

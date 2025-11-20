@@ -1,3 +1,5 @@
+package oldClasses;
+
 public class Car {
     String brand = "Audi";
     String model = "r8";
@@ -7,10 +9,10 @@ public class Car {
 
     void start () {
         isRunning = true;
-        System.out.println("Car started");
+        System.out.println("oldClasses.Car started");
     }
     void stop () {
         isRunning = false;
-        System.out.println("Car stopped");
+        System.out.println("oldClasses.Car stopped");
     }
 }
