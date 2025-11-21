@@ -1,6 +1,5 @@
-import oldClasses.Circle;
-import oldClasses.Rectangle;
-import oldClasses.Triangle;
+import oldStuff.Fish;
+import oldStuff.Hawk;
 
 import java.util.Scanner;
 import java.util.Random;

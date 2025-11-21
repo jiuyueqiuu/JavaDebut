@@ -1,3 +1,5 @@
+package oldStuff;
+
 public class Hawk implements Predator {
 
     @Override

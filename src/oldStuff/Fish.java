@@ -1,3 +1,5 @@
+package oldStuff;
+
 public class Fish implements Prey, Predator {
 
 

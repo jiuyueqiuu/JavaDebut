@@ -1,4 +1,4 @@
-package oldClasses;
+package oldStuff;
 
 public class Deutsch extends Subjects {
 

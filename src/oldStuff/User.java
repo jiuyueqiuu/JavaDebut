@@ -1,4 +1,4 @@
-package oldClasses;
+package oldStuff;
 
 public class User {
     String username;

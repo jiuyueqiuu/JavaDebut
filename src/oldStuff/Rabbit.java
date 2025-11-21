@@ -1,3 +1,5 @@
+import oldStuff.Prey;
+
 public class Rabbit implements Prey {
 
     @Override
