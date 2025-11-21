@@ -1,18 +1,10 @@
 package oldStuff;
 
-public class Car {
-    String brand = "Audi";
-    String model = "r8";
-    int year = 2025;
-    double price = 69999.99;
-    boolean isRunning = false;
+public class Car extends Vehicle {
 
-    void start () {
-        isRunning = true;
-        System.out.println("oldClasses.Car started");
+    @Override
+    void go() {
+        System.out.println("You drive the car");
     }
-    void stop () {
-        isRunning = false;
-        System.out.println("oldClasses.Car stopped");
-    }
+
 }

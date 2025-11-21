@@ -1,5 +1,5 @@
-import oldStuff.Fish;
-import oldStuff.Hawk;
+import oldStuff.Chat;
+import oldStuff.Pets;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -75,6 +75,10 @@ import java.util.Random;
  that implementing classes MUST define
  Supports multiple inheritance-like behaviour
 
+
+ Polymorphism : objects can identify as other objects
+ Objects can be treatde as objects of a common superclass
+
  */
 
 public class Main {
@@ -82,17 +86,6 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
-
-        Rabbit rabbit = new Rabbit();
-        Hawk hawk = new Hawk();
-
-        rabbit.flee();
-        hawk.hunt();
-
-        Fish fish = new Fish();
-        fish.flee();
-        fish.hunt();
-
 
         scanner.close();
 

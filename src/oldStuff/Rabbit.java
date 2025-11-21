@@ -1,4 +1,4 @@
-import oldStuff.Prey;
+package oldStuff;
 
 public class Rabbit implements Prey {
 
