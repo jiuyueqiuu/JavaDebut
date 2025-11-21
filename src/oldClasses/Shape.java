@@ -1,3 +1,5 @@
+package oldClasses;
+
 public abstract class Shape {
 
     abstract double area(); // Abstract method

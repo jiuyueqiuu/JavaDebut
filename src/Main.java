@@ -1,4 +1,6 @@
-import oldClasses.Motor;
+import oldClasses.Circle;
+import oldClasses.Rectangle;
+import oldClasses.Triangle;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -37,14 +39,6 @@ import java.util.Random;
  default -> System.out.println(day + " not exist lil bro");
  }
 
-
- The logical operators :
-
- && = AND
- || = OR
- ! = NOT
-
-
  Important note :
  In Java, overloaded methods can exist !
  That means, methods can share the same name but possess different parameters
@@ -75,6 +69,12 @@ import java.util.Random;
  Can contain 'concrete' methods (which are inherited)
  (Basically, an abstract parent class with an abstract method
  means that its children classes must have that method as well)
+ See Shape class in oldClasses
+
+
+ Interface = a blueprint for a class that specifies a set of abstract methods
+ that implementing classes MUST define
+ Supports multiple inheritance-like behaviour
 
  */
 
@@ -84,12 +84,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Circle circle = new Circle();
-        Triangle triangle = new Triangle();
-        Rectangle rectangle = new Rectangle();
+        Rabbit rabbit = new Rabbit();
+        Hawk hawk = new Hawk();
 
-        circle.display();
+        rabbit.flee();
+        hawk.hunt();
 
+        Fish fish = new Fish();
+        fish.flee();
+        fish.hunt();
 
 
         scanner.close();

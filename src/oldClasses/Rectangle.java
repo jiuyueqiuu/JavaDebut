@@ -1,4 +1,6 @@
-public class Triangle extends Shape {
+package oldClasses;
+
+public class Rectangle extends Shape {
     @Override
     double area() {
         return 0;
