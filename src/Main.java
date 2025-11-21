@@ -1,6 +1,4 @@
-import oldClasses.Deutsch;
-import oldClasses.Informatique;
-import oldClasses.LinearAlgebra;
+import oldClasses.Motor;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -68,6 +66,16 @@ import java.util.Random;
  Used in constructors and method overriding
  Calls the parent constructor to initialise attributes
 
+
+ abstract = Used to define abstract classes and methods
+ Abstraction is the process of hiding implementation details
+ and showing only the essential features
+ Abstract classes CANNOT be instantiated directly
+ Can contain 'abstract' methods (which must be implemented)
+ Can contain 'concrete' methods (which are inherited)
+ (Basically, an abstract parent class with an abstract method
+ means that its children classes must have that method as well)
+
  */
 
 public class Main {
@@ -76,9 +84,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Motor motor1 = new Motor("Ford", "Mustang", 2025, "Rouge");
+        Circle circle = new Circle();
+        Triangle triangle = new Triangle();
+        Rectangle rectangle = new Rectangle();
 
-        System.out.println(motor1);
+        circle.display();
+
+
 
         scanner.close();
 
