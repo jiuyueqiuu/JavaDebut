@@ -1,3 +1,7 @@
+import oldClasses.Deutsch;
+import oldClasses.Informatique;
+import oldClasses.LinearAlgebra;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -72,11 +76,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        Person person1 = new Person("Tom", "Hanks");
-        Student student1 = new Student("Harry", "Potter", 3.25);
+        Motor motor1 = new Motor("Ford", "Mustang", 2025, "Rouge");
 
-        person1.showName();
-
+        System.out.println(motor1);
 
         scanner.close();
 

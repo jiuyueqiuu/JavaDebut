@@ -1,3 +1,5 @@
+package oldClasses;
+
 public class Employee extends Person {
 
     int salary;
