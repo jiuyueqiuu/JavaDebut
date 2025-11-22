@@ -79,6 +79,11 @@ import java.util.Random;
  Polymorphism : objects can identify as other objects
  Objects can be treatde as objects of a common superclass
 
+
+ Threading : Allows a program to run multiple tasks simultaneously
+ (or, autrement dit, in parallel)
+ (Check out MyRunnable class)
+
  */
 
 public class Main {
@@ -87,6 +92,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread = new Thread(myRunnable);
+        thread.setDaemon(true);
+        thread.start();
+
+        System.out.println("You have 5 seconds to enter thy name : ");
+
+        System.out.print("Enter your name : ");
+        String name = scanner.nextLine();
+        System.out.println("Hello " + name);
         scanner.close();
 
     }
