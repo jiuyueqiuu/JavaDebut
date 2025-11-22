@@ -1,5 +1,4 @@
-import oldStuff.Chat;
-import oldStuff.Pets;
+import oldStuff.MyRunnable2;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -82,7 +81,7 @@ import java.util.Random;
 
  Threading : Allows a program to run multiple tasks simultaneously
  (or, autrement dit, in parallel)
- (Check out MyRunnable class)
+ (Check out oldStuff.MyRunnable class)
 
  */
 
@@ -92,16 +91,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random rand = new Random();
 
-        MyRunnable myRunnable = new MyRunnable();
-        Thread thread = new Thread(myRunnable);
-        thread.setDaemon(true);
-        thread.start();
 
-        System.out.println("You have 5 seconds to enter thy name : ");
-
-        System.out.print("Enter your name : ");
-        String name = scanner.nextLine();
-        System.out.println("Hello " + name);
         scanner.close();
 
     }
